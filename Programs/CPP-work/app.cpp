@@ -30,6 +30,8 @@ int main(int argc, char const *argv[])
     }else {
         test(*t4);
     }
+    Triangle t5=createtriangle(12,20,30);
+    test(t5);
 
     return 0;
 }

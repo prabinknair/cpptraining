@@ -14,6 +14,12 @@ Triangle* create(const double& x, const double& y, const double& z){
     return newtriangle;
 }
 
+Triangle& createtriangle(const double& x, const double& y, const double& z){
+    if(((x+y)>z) && ((x+z)>y) && ((y+z)>x)) {
+        Triangle T1={x,y,z};
+    }
+}
+
 int perimeter(const Triangle &t){
     //t.s1=0; //can modify the actual object
     return t.s1+t.s2+t.s3;

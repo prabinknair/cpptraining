@@ -5,6 +5,7 @@ struct Triangle{
 };
 
 Triangle* create(const double& x, const double& y, const double& z);
+Triangle& createtriangle(const double& x, const double& y, const double& z);
 int perimeter(const Triangle &t1);
 
 double area(const Triangle &t1);
