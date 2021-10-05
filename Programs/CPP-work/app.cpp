@@ -20,9 +20,15 @@ int main(int argc, char const *argv[])
 
     Triangle* t3=create(10,3,20);
     if(t3==nullptr){
-        cout<<"error creating triangle";
+        cout<<"error creating triangle\n";
     }else {
         test(*t3);
+    }
+    Triangle* t4=create(10,3,12);
+    if(t4==nullptr){
+        cout<<"error creating triangle\n";
+    }else {
+        test(*t4);
     }
 
     return 0;

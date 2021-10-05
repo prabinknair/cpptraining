@@ -4,13 +4,14 @@
 using namespace std;
 
 Triangle* create(const double& x, const double& y, const double& z){
-    if((x+y)<z||(x+z)<y||(y+z)<x) {
+    if(((x+y)<z) || ((x+z)<y) || ((y+z)<x)) {
         return nullptr;
     }
     Triangle* newtriangle = new Triangle;
     newtriangle->s1=x;
     newtriangle->s2=y;
     newtriangle->s3=z;
+    return newtriangle;
 }
 
 int perimeter(const Triangle &t){
